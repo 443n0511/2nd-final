@@ -27,3 +27,17 @@ gulp.task("default", function() {
     );
   });
 });
+
+
+const autoprefixer =require('gulp-autoprefixer');  //プラグインの定義
+
+
+gulp.task('sass', function () {
+  return gulp.src("scss/**/**.scss")
+    .pipe(sass().on('error', sass.logError))
+    .pipe(autoprefixer({  //autoprefixerの実行
+        browsers: ["last 2 versions"],
+        cascade: false
+    }))
+    .pipe(gulp.dest('css'));
+});

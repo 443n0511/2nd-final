@@ -332,6 +332,16 @@ textarea {
   resize: none;
 }
 
+textarea:focus, textarea:hover {
+  border-color: #4973ff;
+  box-shadow: 0 0 10px rgba(59, 105, 255, 0.3);
+}
+
+input:focus, input:hover {
+  border-color: #4973ff;
+  box-shadow: 0 10px 5px -5px rgba(59, 105, 255, 0.1);
+}
+
 input[type="submit"] {
   cursor: pointer;
   border: none;
@@ -378,6 +388,11 @@ input[type="radio"] + span::before {
   border: 1px solid #3e3e3e;
   border-radius: 50%;
   background: #fff;
+}
+
+input[type="radio"] + span:hover::before {
+  border: 1px solid #4973ff;
+  box-shadow: 0 0 5px rgba(59, 105, 255, 0.4);
 }
 
 input[type="radio"] + span::after {
@@ -439,6 +454,11 @@ input[type="checkbox"] + span::before {
   background: #fff;
 }
 
+input[type="checkbox"] + span:focus::before, input[type="checkbox"] + span:hover::before {
+  border-color: #4973ff;
+  box-shadow: 0 0 10px rgba(59, 105, 255, 0.3);
+}
+
 input[type="checkbox"] + span::after {
   transition: opacity .3s ease 0s;
   opacity: 0;
@@ -470,6 +490,10 @@ select {
   background-image: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+}
+
+select:hover {
+  box-shadow: 0 0 10px rgba(59, 105, 255, 0.3);
 }
 
 select::-ms-expand {
@@ -971,6 +995,9 @@ td {
 /*
     footer end
 */
+/*
+   _header
+*/
 .p-header {
   position: fixed;
   z-index: 10;
@@ -1080,6 +1107,9 @@ td {
   }
 }
 
+/*
+   _header end
+*/
 /*
    _main
 */

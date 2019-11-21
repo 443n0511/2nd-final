@@ -18,9 +18,17 @@ input, textarea {
 
 textarea {
 	resize: none;
+	&:focus, &:hover {
+		border-color: $blue;
+		box-shadow: 0 0 10px rgba(59,105,255,.3);
+	}
 }
 
 input {
+	&:focus, &:hover {
+		border-color: $blue;
+		box-shadow: 0 10px 5px -5px rgba(59,105,255,.1);
+	}
 	&[type="submit"] {
 		cursor: pointer;
 
@@ -74,7 +82,12 @@ input {
 				border-radius: 50%;
 				background: $white;
 			}
-
+			&:hover {
+				&::before {
+					border: 1px solid $blue;
+					box-shadow: 0 0 5px rgba(59,105,255,.4);
+				}
+			}
 
 
 			&::after {
@@ -148,6 +161,12 @@ input {
 				background: #fff;
 			}
 
+			&:focus, &:hover {
+				&::before {
+					border-color: $blue;
+					box-shadow: 0 0 10px rgba(59,105,255,.3);
+				}
+			}
 
 
 			&::after {
@@ -196,6 +215,9 @@ select {
 	-webkit-appearance: none;
 	   -moz-appearance: none;
 
+	&:hover {
+		box-shadow: 0 0 10px rgba(59,105,255,.3);
+	}
 
 	&::-ms-expand {
 		display: none;
