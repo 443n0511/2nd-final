@@ -1,6 +1,6 @@
-// ミックスインの定義
-
-
+/*
+   _mixin
+*/
 @mixin sp {
 	@media (max-width: 768px) {
 		@content;
@@ -59,3 +59,7 @@
 		color: lighten($color, 20%);
 	}
 }
+
+/*
+   _mixin end
+*/
