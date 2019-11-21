@@ -1,0 +1,122 @@
+
+.swiper-pagination {
+	z-index: 0;
+
+	margin: 50px auto;
+}
+/* 全体のスタイル */
+.swiper-pagination-bullet {
+	width: 12px; /* 幅 */
+	height: 12px; /* 高さ */
+	margin: 10px;
+
+	opacity: 1; /* 半透明（デフォルトでは0.2） */
+	background: $white; /* 色：緑 */
+}
+/* 現在のスライドのスタイル */
+.swiper-pagination-bullet-active {
+	width: 12px; /* 幅 */
+	height: 12px; /* 高さ */
+	margin: 0 8px 8px 8px;
+
+	border: solid 2px $brack;
+	-webkit-border-radius: 12px;
+	   -moz-border-radius: 12px;
+	        border-radius: 12px;
+	background-color: $white;
+	-webkit-box-shadow: 0 0 0 1px $white;
+	   -moz-box-shadow: 0 0 0 1px $white;
+	        box-shadow: 0 0 0 1px $white;
+} 
+
+@include  pc {
+	.drawer--right .drawer-nav {
+		right: auto;
+	}
+
+	.drawer-nav .drawer-menu li {
+		display: inline-block;
+	}
+	.drawer-hamburger {
+		display: none;
+	}
+
+	.drawer--left .drawer-nav {
+		left: 0;
+	}
+
+	.drawer-nav {
+		position: relative;
+
+		background-image: transparent;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+}
+@include  sp {
+	.drawer--right .drawer-nav {
+		z-index: 100;
+		right: -300px;
+
+		width: 300px;
+	}
+
+
+	.drawer-hamburger {
+		padding: 22px 10px 30px 0;
+	}
+
+	.drawer-hamburger-icon {
+		width: 25px;
+		height: 4px;
+
+		border-radius: 4px;
+		background-color: $brack;
+
+		&:before, &:after {
+			width: 25px;
+			height: 4px;
+
+			border-radius: 4px;
+			background-color: $brack;
+		}
+		&:after {
+			top: 8px;
+		}
+		&::before {
+			top: -8px;
+		}
+	}
+	.drawer--right .drawer-hamburger, .drawer--right.drawer-open .drawer-nav, .drawer--right.drawer-open .drawer-navbar .drawer-hamburger {
+		right: 0;
+	}
+
+	.drawer-nav {
+		position: fixed;
+		z-index: 2;
+		top: 0;
+
+		overflow: hidden;
+
+		width: 16.25rem;
+		height: 100%;
+
+		color: #222;
+		background-color: #fff;
+	}
+
+	.drawer--right.drawer-open .drawer-hamburger-icon:before, .drawer--right.drawer-open .drawer-hamburger-icon:after {
+		background-color: $white;
+	}
+	.drawer--right.drawer-open .drawer-hamburger {
+		right: 280px;
+
+		padding: 30px 2rem 30px;
+	}
+
+	.drawer-overlay {
+		opacity: .6;
+		background-color: darken($gray,50%);
+	}
+}

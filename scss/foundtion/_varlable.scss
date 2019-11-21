@@ -1,0 +1,17 @@
+// font -------------------------------------------
+
+$font-base: "Montserrat", "游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", sans-serif;
+$font-serif: Georgia,游明朝,"Yu Mincho",YuMincho,"Hiragino Mincho ProN",HGS明朝E,メイリオ,Meiryo,serif;
+$base-font-size: 16px;
+// color ------------------------------------------
+$brack: #3e3e3e;
+$white: #fff;
+$gray: #f3f3f3;
+$blue: #4973ff;
+$red: #ff4646;
+$orange: #ffaa3b;
+
+// imgpath ----------------------------------------
+
+$imgpath: "../img/";
+//使用例 background: url(#{$imgpath}hoge.jpg);

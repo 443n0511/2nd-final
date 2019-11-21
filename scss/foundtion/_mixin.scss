@@ -1,0 +1,61 @@
+// ミックスインの定義
+
+
+@mixin sp {
+	@media (max-width: 768px) {
+		@content;
+	}
+}
+
+
+
+@mixin tab {
+	@media (max-width: 992px) {
+		@content;
+	}
+}
+
+@mixin pc {
+	@media (min-width: 769px) {
+		@content;
+	}
+}
+
+@mixin center_y {
+	position: relative;
+	top: 50%;
+
+	transform: translateY(-50%);
+	text-align: center;
+}
+
+@mixin center_x {
+	position: relative;
+	left: 50%;
+
+	transform: translateX(-50%);
+	text-align: center;
+}
+
+@mixin center_xy {
+	position: relative;
+	top: 50%;
+	left: 50%;
+
+	-webkit-transform: translateX(-50%);
+	        transform: translateX(-50%);
+	        transform: translateY(-50%);
+	text-align: center;
+
+	　　-ms-transform: translateY(-50%);
+	　　-ms-transform: translateX(-50%);
+	　　-webkit-transform: translateY(-50%);
+}
+
+@mixin linkColor($color) {
+	color: $color;
+
+	&:hover, &:active, &:focus {
+		color: lighten($color, 20%);
+	}
+}

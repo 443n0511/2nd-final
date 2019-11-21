@@ -1,0 +1,65 @@
+/*
+   _table 
+*/
+%table {
+	font-size: 20px;
+	font-weight: bold;
+
+	border-collapse: collapse;
+
+	border: 1px solid #707070;
+}
+
+
+table {
+	font-size: 20px;
+	font-weight: bold;
+
+	width: 100%;
+
+	table-layout: fixed;
+	border-spacing: 0;
+	border-collapse: collapse;
+	border-collapse: collapse;
+
+	border: 1px solid $brack;
+
+	@extend %table;
+}
+th {
+	width: 30%;
+	max-width: 280px;
+	padding: 13px 60px;
+
+	vertical-align: center;
+
+	color: #fff;
+	background: $brack;
+
+	@extend %table;
+}
+td {
+	width: 100%;
+	max-width: 680px;
+	padding: 10px;
+
+	text-align: left;
+	vertical-align: center;
+
+	color: $brack;
+	background-color: $white;
+
+	@extend %table;
+}
+
+
+@include  sp {
+	th {
+		max-width: 100px;
+		padding: 13px;
+	}
+}
+
+/*
+   _table end
+*/

@@ -1,0 +1,56 @@
+/*
+   _base 
+*/
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+/* 好きな幅 */
+body {
+	font-family: $font-base;
+	font-size: $base-font-size;
+
+	color: $brack;
+	background-color: $gray;
+}
+
+main {
+	position: relative;
+}
+
+.inner {
+	width: 86.3%; /* 好きな幅 */
+	max-width: 1180px;
+	margin: 0 auto;
+}
+@include  sp {
+	.inner {
+		width: 100%; /* 好きな幅 */
+		max-width: 343px;
+		margin: 0 auto;
+	}
+}
+@include  tab {
+	.inner {
+		width: 91%; /* 好きな幅 */
+		max-width: 902px;
+		margin: 0 auto;
+	}
+}
+
+
+
+.m-inner {
+	width: 960px;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.s-inner {
+	width: 100%; /* 好きな幅 */
+	max-width: 690px;
+	margin: 0 auto;
+}
+
+/*
+   _base end
+*/

@@ -1,0 +1,101 @@
+/*
+    footer
+*/
+.p-footer {
+	position: relative;
+
+	padding: 110px 16px 170px;
+
+	color: $gray;
+	background-color: $brack;
+
+	@include sp {
+		padding: 46px 18px 92px;
+	}
+
+	&--left {
+		float: left;
+
+		@include sp {
+			float: none;
+		}
+	}
+
+	&--sns {
+		margin-bottom: 30px;
+
+		@include sp {
+			padding: 0 85px;
+		}
+
+		&__twitter {
+			font-size: 36px;
+
+			margin-right: 20px;
+			padding-bottom: 30px;
+
+			color: $gray;
+
+			@include sp {
+				float: left;
+			}
+		}
+
+		&__facebook {
+			font-size: 36px;
+
+			padding-bottom: 30px;
+
+			color: $gray;
+
+			@include sp {
+				float: right;
+			}
+		}
+	}
+
+
+
+	&--right {
+		float: right;
+
+		padding-top: 50px;
+
+		@include sp {
+			float: none;
+
+			padding-top: 32px;
+		}
+
+
+
+
+		&__contents {
+			text-align: right;
+
+			@include sp {
+				text-align: center;
+			}
+		}
+	}
+
+	.c-footer__logo {
+		font-size: 40px;
+		font-weight: normal;
+
+		margin-bottom: 14px;
+
+		@include sp {
+			font-size: 7vw;
+
+			margin-bottom: 3px;
+		}
+	}
+
+	.c-footer__copyright {
+		font-size: 12px;
+	}
+}
+/*
+    footer end
+*/
