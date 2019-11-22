@@ -1,7 +1,7 @@
 /*
    _header
 */
-.p-header {
+.l-header {
 	position: fixed;
 	z-index: 10;
 	top: 0;
@@ -14,7 +14,7 @@
 
 
 
-.p-header--nav {
+.l-header--nav {
 	line-height: 80px;
 
 	width: 100%;
@@ -22,12 +22,12 @@
 
 	background-color: transparent;
 }
-.p-header--logo__img {
+.l-header--logo__img {
 	display: none;
 }
 
 
-.p-header--nav-list {
+.l-header--nav-list {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -90,10 +90,10 @@
 
 
 @include  sp {
-	.p-header {
+	.l-header {
 		height: 68px;
 	}
-	.p-header--logo {
+	.l-header--logo {
 		height: 68px;
 		margin: 0;
 		padding: 21.5px 0;
@@ -113,12 +113,12 @@
 			width: 200px;
 		}
 	}
-	.p-header--nav {
+	.l-header--nav {
 		width: 300px;
 	}
 
 
-	.p-header--nav-list {
+	.l-header--nav-list {
 		z-index: 9999;
 
 		flex-direction: column;

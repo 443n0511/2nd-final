@@ -1,9 +1,9 @@
 
-.c-big-title {
+.c-big-haeding {
 	font-size: 38px;
 	font-weight: bold;
 }
-.c-title {
+.c-haeding {
 	font-size: 36px;
 	font-weight: bold;
 
@@ -12,16 +12,16 @@
 	text-align: center;
 }
 
-.c-title__white {
+.c-haeding__white {
 	color: $white;
 }
-.c-sub-title {
+.c-sub-haeding {
 	font-size: 30px;
 	font-weight: bold;
 }
 
 
-.c-third-title {
+.c-third-haeding {
 	font-size: 20px;
 	font-weight: bold;
 }
@@ -29,10 +29,10 @@
 
 
 @include sp {
-	.c-sub-title {
+	.c-sub-haeding {
 		font-size: 24px;
 	}
-	.c-title {
+	.c-haeding {
 		font-size: 30px;
 
 		margin: 0 auto;
