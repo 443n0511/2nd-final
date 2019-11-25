@@ -1,38 +1,34 @@
 /*
    _table 
 */
+
+
+%table {
+	font-size: 20px;
+	font-weight: bold;
+
+	border-collapse: collapse;
+
+	border: 1px solid #707070;
+}
+
+
 .c-table {
-	@include  sp {
-		th {
-			max-width: 100px;
-			padding: 13px;
-		}
-	}
-	%table {
-		font-size: 20px;
-		font-weight: bold;
+	font-size: 20px;
+	font-weight: bold;
 
-		border-collapse: collapse;
+	width: 100%;
 
-		border: 1px solid #707070;
-	}
+	table-layout: fixed;
+	border-spacing: 0;
+	border-collapse: collapse;
+	border-collapse: collapse;
+
+	border: 1px solid $brack;
+
+	@extend %table;
 
 
-	table {
-		font-size: 20px;
-		font-weight: bold;
-
-		width: 100%;
-
-		table-layout: fixed;
-		border-spacing: 0;
-		border-collapse: collapse;
-		border-collapse: collapse;
-
-		border: 1px solid $brack;
-
-		@extend %table;
-	}
 	th {
 		width: 30%;
 		max-width: 280px;
@@ -44,6 +40,10 @@
 		background: $brack;
 
 		@extend %table;
+		@include  sp {
+			max-width: 100px;
+			padding: 13px;
+		}
 	}
 	td {
 		width: 100%;
@@ -59,6 +59,7 @@
 		@extend %table;
 	}
 }
+
 /*
    _table end
 */
