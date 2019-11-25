@@ -61,10 +61,10 @@
 
 @include sp {
 	.p-about {
-		padding-bottom: 215px;
+		padding-bottom: 195px;
 
 		background-position: left 24% bottom 53px;
-		background-size: 1369px;
+		background-size: 1400px;
 	}
 	.p-about-box {
 		position: relative;
@@ -158,9 +158,9 @@
 		display: flex;
 		justify-content: space-around;
 
-		width: 80%;
-		max-width: 960px;
-		min-height: 320px;
+		width: 980px;
+		max-width: 90%;
+		min-height: 321px;
 
 		transform: translateX(-50%);
 
@@ -172,12 +172,11 @@
 .p-service-box--content-container {
 	position: relative;
 
-	padding: 61px 0 35px 45px;
+	padding: 61px 35px 45px;
 
 	text-align: center;
-	&:last-child {
-		padding-right: 48px;
-	}
+	letter-spacing: .05em;
+
 	&__heading {
 		font-weight: 500;
 		line-height: 28px;
