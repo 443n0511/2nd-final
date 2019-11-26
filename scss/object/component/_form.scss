@@ -20,6 +20,7 @@
 
 	textarea {
 		resize: none;
+		cursor: pointer;
 		&:focus, &:hover {
 			border-color: $blue;
 			box-shadow: 0 0 10px rgba(59,105,255,.3);
@@ -27,6 +28,7 @@
 	}
 
 	input {
+		cursor: pointer;
 		&:focus, &:hover {
 			border-color: $blue;
 			box-shadow: 0 10px 5px -5px rgba(59,105,255,.1);
@@ -50,6 +52,8 @@
 
 		&[type="radio"] {
 			display: none;
+
+			cursor: pointer;
 
 			+ span {
 				font-size: 22px;
@@ -107,6 +111,7 @@
 			}
 
 			&:checked + span {
+				cursor: pointer;
 				&::after {
 					position: absolute;
 					top: 50%;
@@ -133,6 +138,8 @@
 
 		&[type="checkbox"] {
 			display: none;
+
+			cursor: pointer;
 
 			+ span {
 				position: relative;
@@ -179,6 +186,7 @@
 			}
 
 			&:checked + span {
+				cursor: pointer;
 				&::after {
 					position: absolute;
 					top: 55%;
@@ -208,6 +216,7 @@
 		width: 100%;
 		padding: 8px 24px 8px 8px;
 
+		cursor: pointer;
 		cursor: pointer;
 
 		border: 1px solid $brack;

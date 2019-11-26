@@ -568,12 +568,17 @@ main {
 
 .c-contact--form textarea {
   resize: none;
+  cursor: pointer;
 }
 
 .c-contact--form textarea:focus, .c-contact--form textarea:hover {
   border-color: #4973ff;
   -webkit-box-shadow: 0 0 10px rgba(59, 105, 255, 0.3);
           box-shadow: 0 0 10px rgba(59, 105, 255, 0.3);
+}
+
+.c-contact--form input {
+  cursor: pointer;
 }
 
 .c-contact--form input:focus, .c-contact--form input:hover {
@@ -599,6 +604,7 @@ main {
 
 .c-contact--form input[type="radio"] {
   display: none;
+  cursor: pointer;
 }
 
 .c-contact--form input[type="radio"] + span {
@@ -652,6 +658,10 @@ main {
           box-shadow: none;
 }
 
+.c-contact--form input[type="radio"]:checked + span {
+  cursor: pointer;
+}
+
 .c-contact--form input[type="radio"]:checked + span::after {
   position: absolute;
   top: 50%;
@@ -676,6 +686,7 @@ main {
 
 .c-contact--form input[type="checkbox"] {
   display: none;
+  cursor: pointer;
 }
 
 .c-contact--form input[type="checkbox"] + span {
@@ -716,6 +727,10 @@ main {
   opacity: 0;
 }
 
+.c-contact--form input[type="checkbox"]:checked + span {
+  cursor: pointer;
+}
+
 .c-contact--form input[type="checkbox"]:checked + span::after {
   position: absolute;
   top: 55%;
@@ -738,6 +753,7 @@ main {
   font-size: 1em;
   width: 100%;
   padding: 8px 24px 8px 8px;
+  cursor: pointer;
   cursor: pointer;
   border: 1px solid #3e3e3e;
   border-radius: 0;
@@ -769,6 +785,7 @@ main {
   line-height: 1.7;
   padding-left: 0;
   list-style: none;
+  cursor: pointer;
 }
 
 .c-topics-list--item {
@@ -937,6 +954,7 @@ main {
           align-items: center;
   height: 100%;
   margin: 0;
+  cursor: pointer;
   color: #3e3e3e;
 }
 
