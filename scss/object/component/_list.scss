@@ -246,6 +246,7 @@
 
 	&__text {
 		font-weight: bold;
+		line-height: 25px;
 
 		display: inline-block;
 	}
@@ -291,6 +292,8 @@
 	border-radius: 7px;
 	background-color: $white;
 	&__text {
+		line-height: 25px;
+
 		display: block;
 
 		max-width: 0 auto;

@@ -989,6 +989,7 @@ main {
 
 .c-accordion-list--title__text {
   font-weight: bold;
+  line-height: 25px;
   display: inline-block;
 }
 
@@ -1028,6 +1029,7 @@ main {
 }
 
 .c-accordion-list--answer__text {
+  line-height: 25px;
   display: block;
   max-width: 0 auto;
   margin: 0 0 18px 0;
