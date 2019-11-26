@@ -247,7 +247,7 @@
 
 .p-results-container--card {
 	width: 100%;
-	min-width: 422px;
+	max-width: 422px;
 	height: auto;
 
 	background-color: $white;
@@ -303,12 +303,12 @@
 	}
 
 	.p-results-container--card {
-		width: 100%;
-		min-width: 276px ;
+		width: 276px;
+		max-width: 100%;
 		&__heading {
 			font-size: 15px;
 
-			padding: 0 12px 4px;
+			padding: 12px;
 		}
 
 
@@ -683,12 +683,11 @@
 	color: $white;
 	border-top-left-radius: 12px;
 	border-top-right-radius: 12px;
-	background: transparent url(../image/contact-heading-bg.jpeg) no-repeat center center/100%;
+	background: transparent url(../image/contact-title-bg.jpeg) no-repeat center center/100%;
 
 	&__heading {
-		font-size: 36px;
-
 		margin-bottom: 11px;
+		padding: 0;
 	}
 }
 

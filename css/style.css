@@ -271,9 +271,6 @@ main {
   }
   .l-header--logo__anchor {
     display: table;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    height: 68px;
     margin-left: 16px;
   }
   .l-header--logo__img {
@@ -685,7 +682,7 @@ main {
   position: relative;
   display: inline-block;
   margin: 0 .2em 0;
-  padding: 0 0 0 1.2em;
+  padding: 0 0 0 2.2em;
   cursor: pointer;
   -webkit-transition: all .3s ease 0s;
   transition: all .3s ease 0s;
@@ -694,7 +691,7 @@ main {
 .c-contact--form input[type="checkbox"] + span::before {
   position: absolute;
   top: 50%;
-  left: -22px;
+  left: -3px;
   display: block;
   width: 1.3em;
   height: 1.3em;
@@ -722,7 +719,7 @@ main {
 .c-contact--form input[type="checkbox"]:checked + span::after {
   position: absolute;
   top: 55%;
-  left: -20px;
+  left: -2px;
   display: block;
   width: 20px;
   height: 10px;
@@ -1382,7 +1379,7 @@ main {
 
 .p-results-container--card {
   width: 100%;
-  min-width: 422px;
+  max-width: 422px;
   height: auto;
   background-color: #fff;
 }
@@ -1433,12 +1430,12 @@ main {
     margin: 0;
   }
   .p-results-container--card {
-    width: 100%;
-    min-width: 276px;
+    width: 276px;
+    max-width: 100%;
   }
   .p-results-container--card__heading {
     font-size: 15px;
-    padding: 0 12px 4px;
+    padding: 12px;
   }
   .p-results-container--card__text {
     font-size: 12px;
@@ -1746,12 +1743,12 @@ main {
   color: #fff;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
-  background: transparent url(../image/contact-heading-bg.jpeg) no-repeat center center/100%;
+  background: transparent url(../image/contact-title-bg.jpeg) no-repeat center center/100%;
 }
 
 .p-contact-heading-box__heading {
-  font-size: 36px;
   margin-bottom: 11px;
+  padding: 0;
 }
 
 .c-contact--form {
