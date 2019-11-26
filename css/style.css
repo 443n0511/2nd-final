@@ -1123,16 +1123,17 @@ main {
    _table 
 */
 .c-table, .c-table th, .c-table td {
-  font-size: 20px;
-  font-weight: bold;
+  font-weight: 600;
   border-collapse: collapse;
   border: 1px solid #707070;
 }
 
 .c-table {
   font-size: 20px;
-  font-weight: bold;
+  line-height: 60px;
   width: 100%;
+  max-width: 980px;
+  height: 60px;
   table-layout: fixed;
   border-spacing: 0;
   border-collapse: collapse;
@@ -1140,26 +1141,26 @@ main {
   border: 1px solid #3e3e3e;
 }
 
+@media (max-width: 768px) {
+  .c-table {
+    font-size: 16px;
+  }
+}
+
 .c-table th {
-  width: 30%;
-  max-width: 280px;
-  padding: 13px 60px;
+  width: 45%;
   vertical-align: center;
   color: #fff;
   background: #3e3e3e;
 }
 
-@media (max-width: 768px) {
-  .c-table th {
-    max-width: 100px;
-    padding: 13px;
-  }
+.c-table tr:not(:last-child) th {
+  border-bottom: 1px solid #fff;
 }
 
 .c-table td {
   width: 100%;
-  max-width: 680px;
-  padding: 10px;
+  padding-left: 2rem;
   text-align: left;
   vertical-align: center;
   color: #3e3e3e;

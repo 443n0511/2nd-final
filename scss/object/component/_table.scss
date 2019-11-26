@@ -4,8 +4,7 @@
 
 
 %table {
-	font-size: 20px;
-	font-weight: bold;
+	font-weight: 600;
 
 	border-collapse: collapse;
 
@@ -15,9 +14,11 @@
 
 .c-table {
 	font-size: 20px;
-	font-weight: bold;
+	line-height: 60px;
 
 	width: 100%;
+	max-width: 980px;
+	height: 60px;
 
 	table-layout: fixed;
 	border-spacing: 0;
@@ -27,12 +28,13 @@
 	border: 1px solid $brack;
 
 	@extend %table;
+	@include  sp {
+		font-size: 16px;
+	}
 
 
 	th {
-		width: 30%;
-		max-width: 280px;
-		padding: 13px 60px;
+		width: 45%;
 
 		vertical-align: center;
 
@@ -40,15 +42,14 @@
 		background: $brack;
 
 		@extend %table;
-		@include  sp {
-			max-width: 100px;
-			padding: 13px;
-		}
+	}
+
+	tr:not(:last-child) th {
+		border-bottom: 1px solid $white;
 	}
 	td {
 		width: 100%;
-		max-width: 680px;
-		padding: 10px;
+		padding-left: 2rem;
 
 		text-align: left;
 		vertical-align: center;
@@ -59,6 +60,7 @@
 		@extend %table;
 	}
 }
+
 
 /*
    _table end
