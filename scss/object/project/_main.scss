@@ -117,9 +117,10 @@
 }
 
 
-
-.p-news-heading-box--heading {
-	padding: 60px 0 ;
+@include  pc {
+	.p-news-heading-box--heading {
+		padding: 60px 0 ;
+	}
 }
 
 
@@ -197,7 +198,7 @@
 
 @include  sp {
 	.p-service {
-		margin-bottom: 530px;
+		margin-bottom: 300px;
 	}
 	.p-service-box {
 		padding-bottom: 350px;
@@ -288,11 +289,6 @@
 }
 
 @include  sp {
-	.p-results {
-		margin-top: 100px;
-	}
-
-
 	.p-results-inner {
 		width: 100%;
 		padding: 0 0 0 16px;
@@ -345,9 +341,12 @@
 	color: $white;
 }
 .p-price--text {
+	font-size: 12px;
+
 	display: block;
 
 	margin: 0 auto;
+	padding-top: 24px;
 
 	text-align: left;
 
@@ -361,6 +360,9 @@
 
 	.p-price--table {
 		max-width: 343px;
+	}
+	.p-price--text {
+		padding-top: 14px;
 	}
 }
 
