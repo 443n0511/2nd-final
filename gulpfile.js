@@ -2,44 +2,28 @@
 const gulp = require("gulp");
 // Sassをコンパイルするプラグインの読み込み
 const sass = require("gulp-sass");
+ //ベンダープレフィックス
+const autoprefixer =require('gulp-autoprefixer');
 
+gulp.task('html', function () {
+  return gulp.src("src/**/*.html")
+    .pipe(gulp.dest('dist/'))
+})
 
-const autoprefixer =require('gulp-autoprefixer');  //プラグインの定義
-
-
-gulp.task("sass", function () {
+/// cssコンパイル ////////////////////////////////////////////
+gulp.task('sass', function() {
   return gulp.src("src/scss/**/**.scss")//sassファイルを読み込む
-    .pipe(sass().on('error', sass.logError))
-   
-    .pipe(gulp.dest("src/css"));//書き出し
+        .pipe(sass().on('error', sass.logError))
+        .pipe( sass({ outputStyle: 'expanded' }) )//CSSの出力形式
+        .pipe(autoprefixer( {cascade:false}))
+        .pipe(gulp.dest("src/css"));//書き出し
 });
 
-// style.scssの監視タスクを作成する
-gulp.task("default", function() {
-  // ★ style.scssファイルを監視
-  return gulp.watch("src/scss/**/**.scss", function() {
-    // style.scssの更新があった場合の処理
+/// 監視フォルダ ////////////////////////////////////////////
+gulp.task('watch', function(){
+  gulp.watch('src/scss/**/**.scss', gulp.task('sass')); //sassが更新されたらgulp sassを実行
 
-    // style.scssファイルを取得
-    return (
-      gulp
-        .src("src/scss/style.scss")
-        // Sassのコンパイルを実行
-        .pipe(
-          sass({
-            outputStyle: "expanded"
-          })
-            // Sassのコンパイルエラーを表示
-            // (これがないと自動的に止まってしまう)
-            .on("error", sass.logError)
-        )
-        .pipe(autoprefixer({  //autoprefixerの実行
-         
-      }))   
-        // cssフォルダー以下に保存
-        .pipe(gulp.dest("src/css"))
-        
-    );
-  });
 });
 
+/// Gulpコマンドで動かすもの ////////////////////////////////////////////
+gulp.task('default', gulp.task('watch'));

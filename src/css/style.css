@@ -14,7 +14,7 @@
 */
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -94,11 +94,11 @@ main {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 @media (max-width: 768px) {
@@ -117,8 +117,8 @@ main {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     padding: 0 60px;
   }
 }
@@ -214,10 +214,10 @@ main {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   width: 650px;
   margin-top: 14px;
   text-align: center;
@@ -227,7 +227,7 @@ main {
   font-size: 16px;
   display: inline-block;
   -ms-flex-preferred-size: 40px;
-      flex-basis: 40px;
+  flex-basis: 40px;
   padding: 0;
 }
 
@@ -251,18 +251,18 @@ main {
   transition: transform .3s;
   transition: transform .3s, -webkit-transform .3s;
   -webkit-transform: scale(0, 1);
-      -ms-transform: scale(0, 1);
-          transform: scale(0, 1);
+  -ms-transform: scale(0, 1);
+  transform: scale(0, 1);
   -webkit-transform-origin: center top;
-      -ms-transform-origin: center top;
-          transform-origin: center top;
+  -ms-transform-origin: center top;
+  transform-origin: center top;
   background: #3e3e3e;
 }
 
 .l-header--nav-list__anchor:hover::after {
   -webkit-transform: scale(1, 1);
-      -ms-transform: scale(1, 1);
-          transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  transform: scale(1, 1);
 }
 
 .nav-item-border {
@@ -293,8 +293,8 @@ main {
     z-index: 9999;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     width: 99px;
     margin: 200px  100px;
   }
@@ -584,7 +584,7 @@ main {
 .c-contact--form textarea:focus, .c-contact--form textarea:hover {
   border-color: #4973ff;
   -webkit-box-shadow: 0 0 10px rgba(59, 105, 255, 0.3);
-          box-shadow: 0 0 10px rgba(59, 105, 255, 0.3);
+  box-shadow: 0 0 10px rgba(59, 105, 255, 0.3);
 }
 
 .c-contact--form input {
@@ -594,7 +594,7 @@ main {
 .c-contact--form input:focus, .c-contact--form input:hover {
   border-color: #4973ff;
   -webkit-box-shadow: 0 10px 5px -5px rgba(59, 105, 255, 0.1);
-          box-shadow: 0 10px 5px -5px rgba(59, 105, 255, 0.1);
+  box-shadow: 0 10px 5px -5px rgba(59, 105, 255, 0.1);
 }
 
 .c-contact--form input[type="submit"] {
@@ -641,8 +641,8 @@ main {
   height: 12px;
   content: "";
   -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   border: 1px solid #3e3e3e;
   border-radius: 50%;
   background: #fff;
@@ -651,7 +651,7 @@ main {
 .c-contact--form input[type="radio"] + span:hover::before {
   border: 1px solid #4973ff;
   -webkit-box-shadow: 0 0 5px rgba(59, 105, 255, 0.4);
-          box-shadow: 0 0 5px rgba(59, 105, 255, 0.4);
+  box-shadow: 0 0 5px rgba(59, 105, 255, 0.4);
 }
 
 .c-contact--form input[type="radio"] + span::after {
@@ -665,7 +665,7 @@ main {
   outline: none;
   background: #3e3e3e;
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 .c-contact--form input[type="radio"]:checked + span {
@@ -681,8 +681,8 @@ main {
   height: 6px;
   content: "";
   -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   opacity: 1;
   border-radius: 50%;
   background: #4973ff;
@@ -718,8 +718,8 @@ main {
   height: 1.3em;
   content: "";
   -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   border: 1px solid #3e3e3e;
   border-radius: 2px;
   background: #fff;
@@ -728,7 +728,7 @@ main {
 .c-contact--form input[type="checkbox"] + span:focus::before, .c-contact--form input[type="checkbox"] + span:hover::before {
   border-color: #4973ff;
   -webkit-box-shadow: 0 0 10px rgba(59, 105, 255, 0.3);
-          box-shadow: 0 0 10px rgba(59, 105, 255, 0.3);
+  box-shadow: 0 0 10px rgba(59, 105, 255, 0.3);
 }
 
 .c-contact--form input[type="checkbox"] + span::after {
@@ -751,8 +751,8 @@ main {
   margin-top: -.2em;
   content: "";
   -webkit-transform: translateY(-50%) rotate(-45deg);
-      -ms-transform: translateY(-50%) rotate(-45deg);
-          transform: translateY(-50%) rotate(-45deg);
+  -ms-transform: translateY(-50%) rotate(-45deg);
+  transform: translateY(-50%) rotate(-45deg);
   opacity: 1;
   border-bottom: 3px solid #4973ff;
   border-left: 3px solid #4973ff;
@@ -774,7 +774,7 @@ main {
 
 .c-contact--form select:hover {
   -webkit-box-shadow: 0 0 10px rgba(59, 105, 255, 0.3);
-          box-shadow: 0 0 10px rgba(59, 105, 255, 0.3);
+  box-shadow: 0 0 10px rgba(59, 105, 255, 0.3);
 }
 
 .c-contact--form select::-ms-expand {
@@ -785,7 +785,7 @@ main {
   border: 1px solid #3e3e3e;
   outline: none;
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 /*
@@ -804,8 +804,8 @@ main {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin: 0 50px;
   padding: 0 10px;
   -webkit-transition: ease .3s;
@@ -831,8 +831,8 @@ main {
   margin-top: -2.5px;
   content: "";
   -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
   border-top: 3px solid #3e3e3e;
   border-right: 3px solid #3e3e3e;
 }
@@ -850,7 +850,7 @@ main {
   font-size: 18px;
   display: inline-block;
   -ms-flex-preferred-size: 100px;
-      flex-basis: 100px;
+  flex-basis: 100px;
   min-width: 100px;
   white-space: nowrap;
   letter-spacing: 1px;
@@ -861,7 +861,7 @@ main {
   position: relative;
   display: inline-block;
   -ms-flex-preferred-size: auto;
-      flex-basis: auto;
+  flex-basis: auto;
   max-width: 690px;
   margin: 38px 0;
   padding-right: 25px;
@@ -960,8 +960,8 @@ main {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   height: 100%;
   margin: 0;
   cursor: pointer;
@@ -979,8 +979,8 @@ main {
   transition: all .3s ease-in-out;
   /*縦線に*/
   -webkit-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-          transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
   background: #4973ff;
 }
 
@@ -1025,8 +1025,8 @@ main {
 
 .c-accordion-list--title.open::before {
   -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-          transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .c-accordion-list--title.open::after {
@@ -1070,8 +1070,8 @@ main {
     max-width: 616px;
     padding-bottom: 30px;
     -webkit-transform: translateX(-100%);
-        -ms-transform: translateX(-100%);
-            transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
   }
   .c-accordion-list--answer {
     max-width: 580px;
@@ -1085,8 +1085,8 @@ main {
     min-width: 616px;
     padding-bottom: 30px;
     -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-            transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
   }
   .c-accordion-list--answer {
     min-width: 580px;
@@ -1289,7 +1289,7 @@ main {
   transition: all .3s;
   background-color: #fff;
   -webkit-box-shadow: 0px 5px 12px #3e3e3e33;
-          box-shadow: 0px 5px 12px #3e3e3e33;
+  box-shadow: 0px 5px 12px #3e3e3e33;
 }
 
 @media (min-width: 769px) {
@@ -1330,16 +1330,16 @@ main {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   width: 980px;
   max-width: 90%;
   min-height: 321px;
   -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
   background-color: #fff;
   -webkit-box-shadow: 0px 5px 12px #3e3e3e33;
-          box-shadow: 0px 5px 12px #3e3e3e33;
+  box-shadow: 0px 5px 12px #3e3e3e33;
 }
 
 .p-service-box--content-container {
@@ -1374,8 +1374,8 @@ main {
     top: 110px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
   .p-service-box--content-container {
     padding: 0px 16px 65px 16px;
@@ -1522,7 +1522,7 @@ main {
   padding: 40px;
   background-color: #fff;
   -webkit-box-shadow: 0px 5px 12px #3e3e3e33;
-          box-shadow: 0px 5px 12px #3e3e3e33;
+  box-shadow: 0px 5px 12px #3e3e3e33;
 }
 
 .p-comments--contents-box {
@@ -1703,8 +1703,8 @@ main {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
     width: 85%;
     margin-top: 130px;
   }
@@ -1798,8 +1798,8 @@ main {
   font-size: 22px;
   position: relative;
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 35%;
-          flex: 0 0 35%;
+  -ms-flex: 0 0 35%;
+  flex: 0 0 35%;
 }
 
 .c-contact--form__caution {
@@ -1843,8 +1843,8 @@ main {
   margin-top: -2.5px;
   content: "";
   -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
   border-right: 3px solid #3e3e3e;
   border-bottom: 3px solid #3e3e3e;
 }

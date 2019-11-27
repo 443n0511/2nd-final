@@ -1,4 +1,5 @@
 //スライダー
+$(function () {
 var mySwiper = new Swiper ('.swiper-container', {
 
   loop: true, // ループをするかどうか
@@ -42,13 +43,16 @@ var mySwiper = new Swiper ('.swiper-container', {
   }
 
 });
+});
 
 
 
 
+$(function () {
 //WOWをこれで動かしてる
   new WOW().init();
 
+});
 
 
   $(document).ready(function() {
