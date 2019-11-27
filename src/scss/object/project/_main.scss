@@ -11,7 +11,7 @@
 .p-about {
 	width: 100%;
 
-	background: transparent url(../image/mv@2x.png) no-repeat center left/cover;
+	background: transparent url(../../dist/image/mv@2x.png) no-repeat center left/cover;
 }
 
 .p-about-box {
@@ -51,7 +51,7 @@
 		padding-bottom: 125px;
 
 		background-color: transparent ;
-		background-image: url(../image/mv@2x.png);
+		background-image: url(../../dist/image/mv@2x.png);
 		background-repeat: no-repeat;
 		background-position: 20% 0;
 		background-size: cover;
@@ -528,13 +528,13 @@
 	height: 100%;
 	margin-top: 100px;
 
-	background: transparent url(../image/sunyu-kim-1053375-unsplash@2x.png) no-repeat center top/125%;
+	background: transparent url(../../dist/image/sunyu-kim-1053375-unsplash@2x.png) no-repeat center top/125%;
 }
 
 
 @include tab {
 	.p-faqs {
-		background: transparent url(../image/sunyu-kim-1053375-unsplash@2x.png) no-repeat center top/200%;
+		background: transparent url(../../dist/image/sunyu-kim-1053375-unsplash@2x.png) no-repeat center top/200%;
 	}
 }
 
@@ -544,7 +544,7 @@
 		margin-top: 0px;
 		padding-bottom: 40px;
 
-		background: transparent url(../image/sunyu-kim-1053375-unsplash@2x.png) no-repeat center top/350%;
+		background: transparent url(../../dist/image/sunyu-kim-1053375-unsplash@2x.png) no-repeat center top/350%;
 	}
 }
 
@@ -670,7 +670,7 @@
 .p-contact {
 	padding: 80px 16px;
 
-	background-image: url(../image/contact-bg.jpg);
+	background-image: url(../../dist/image/contact-bg.jpg);
 	background-size: cover;
 }
 
@@ -683,7 +683,7 @@
 	color: $white;
 	border-top-left-radius: 12px;
 	border-top-right-radius: 12px;
-	background: transparent url(../image/contact-title-bg.jpeg) no-repeat center center/100%;
+	background: transparent url(../../dist/image/contact-title-bg.jpeg) no-repeat center center/100%;
 
 	&__heading {
 		margin-bottom: 11px;

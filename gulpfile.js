@@ -11,7 +11,7 @@ gulp.task("sass", function () {
   return gulp.src("src/scss/**/**.scss")//sassファイルを読み込む
     .pipe(sass().on('error', sass.logError))
    
-    .pipe(gulp.dest('css'));//書き出し
+    .pipe(gulp.dest("src/css"));//書き出し
 });
 
 // style.scssの監視タスクを作成する
@@ -37,7 +37,8 @@ gulp.task("default", function() {
          
       }))   
         // cssフォルダー以下に保存
-        .pipe(gulp.dest("css"))
+        .pipe(gulp.dest("src/css"))
+        
     );
   });
 });
