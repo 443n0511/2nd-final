@@ -4,6 +4,24 @@ const gulp = require("gulp");
 const sass = require("gulp-sass");
  //ベンダープレフィックス
 const autoprefixer =require('gulp-autoprefixer');
+// browser-syncのプラグインの読み込み
+const browserSync = require("browser-sync");
+
+
+/// 自動リロード ////////////////////////////////////////////
+gulp.task("browserSync", function() {
+  browserSync({
+    server: {
+      baseDir : 'dist/html', // 対象となるディレクトリ
+      index : 'index.html', // リロードするHTMLファイル
+    }
+  });
+  // srcフォルダ以下のファイルを監視
+  gulp.watch("src/**", function() {
+    browserSync.reload(); // ファイルに変更があれば同期しているブラウザをリロード
+  });
+});
+/// htmlをdistにコピー ////////////////////////////////////////////
 
 gulp.task('html', function () {
   return gulp.src("src/**/*.html")
@@ -26,4 +44,9 @@ gulp.task('watch', function(){
 });
 
 /// Gulpコマンドで動かすもの ////////////////////////////////////////////
-gulp.task('default', gulp.task('watch'));
+
+gulp.task('default', gulp.series(
+  gulp.parallel('watch', 'sass','html','browserSync')
+));
+
+
