@@ -9,18 +9,12 @@
 	color: $gray;
 	background-color: $brack;
 
-	@include sp {
-		padding: 46px 18px 92px;
-	}
+
 
 	&--container {
 		display: flex;
 		align-items: flex-end;
 		justify-content: space-between;
-
-		@include sp {
-			display: block;
-		}
 	}
 
 
@@ -32,81 +26,85 @@
 
 		opacity: .6;
 
-		@include sp {
-			display: flex;
-			justify-content: space-around;
-
-			margin: 0 auto;;
-		}
-
 		&__twitter {
 			margin-right: 20px;
 			padding-bottom: 30px;
 
 			color: $gray;
-
-			@include sp {
-				padding: 0;
-			}
 		}
 
 		&__facebook {
 			padding-bottom: 30px;
 
 			color: $gray;
-
-			@include sp {
-				padding: 0;
-			}
 		}
 	}
 
 
 
 	&--right {
-		float: right;
-
 		padding-top: 50px;
-
-		@include sp {
-			float: none;
-
-			padding-top: 32px;
-		}
-
-
-
-
-		&__contents {
-			text-align: right;
-
-			@include sp {
-				text-align: center;
-			}
-		}
 	}
 
-	.l-footer__logo {
+
+
+
+	&__contents {
+		text-align: right;
+	}
+
+	&__logo {
 		font-size: 40px;
 		font-weight: normal;
 
 		margin-bottom: 14px;
+	}
 
-		@include sp {
+	&__copyright {
+		font-size: 12px;
+
+		padding-bottom: 50px;
+
+		text-align: center;
+	}
+}
+
+@include sp {
+	.l-footer {
+		padding: 46px 18px 92px;
+		&--container {
+			display: block;
+		}
+
+		&--sns {
+			display: flex;
+			justify-content: space-around;
+
+			margin: 0 auto;
+		}
+
+		&__twitter {
+			padding: 0;
+		}
+
+		&__facebook {
+			padding: 0;
+		}
+
+		&--right {
+			padding-top: 32px;
+		}
+
+		&__contents {
+			text-align: center;
+		}
+		&__logo {
 			font-size: 34px;
 
 			margin-bottom: 3px;
 
 			text-align: center;
 		}
-	}
-
-	.l-footer__copyright {
-		font-size: 12px;
-
-		padding-bottom: 50px;
-
-		text-align: center;
 	}
 }
 /*

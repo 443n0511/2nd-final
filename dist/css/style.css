@@ -83,12 +83,6 @@ main {
   background-color: #3e3e3e;
 }
 
-@media (max-width: 768px) {
-  .l-footer {
-    padding: 46px 18px 92px;
-  }
-}
-
 .l-footer--container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -101,27 +95,10 @@ main {
   justify-content: space-between;
 }
 
-@media (max-width: 768px) {
-  .l-footer--container {
-    display: block;
-  }
-}
-
 .l-footer--sns {
   font-size: 36px;
   margin-bottom: 30px;
   opacity: .6;
-}
-
-@media (max-width: 768px) {
-  .l-footer--sns {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    margin: 0 auto;
-  }
 }
 
 .l-footer--sns__twitter {
@@ -130,63 +107,63 @@ main {
   color: #f3f3f3;
 }
 
-@media (max-width: 768px) {
-  .l-footer--sns__twitter {
-    padding: 0;
-  }
-}
-
 .l-footer--sns__facebook {
   padding-bottom: 30px;
   color: #f3f3f3;
 }
 
-@media (max-width: 768px) {
-  .l-footer--sns__facebook {
-    padding: 0;
-  }
-}
-
 .l-footer--right {
-  float: right;
   padding-top: 50px;
 }
 
-@media (max-width: 768px) {
-  .l-footer--right {
-    float: none;
-    padding-top: 32px;
-  }
-}
-
-.l-footer--right__contents {
+.l-footer__contents {
   text-align: right;
 }
 
-@media (max-width: 768px) {
-  .l-footer--right__contents {
-    text-align: center;
-  }
-}
-
-.l-footer .l-footer__logo {
+.l-footer__logo {
   font-size: 40px;
   font-weight: normal;
   margin-bottom: 14px;
 }
 
+.l-footer__copyright {
+  font-size: 12px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
 @media (max-width: 768px) {
-  .l-footer .l-footer__logo {
+  .l-footer {
+    padding: 46px 18px 92px;
+  }
+  .l-footer--container {
+    display: block;
+  }
+  .l-footer--sns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin: 0 auto;
+  }
+  .l-footer__twitter {
+    padding: 0;
+  }
+  .l-footer__facebook {
+    padding: 0;
+  }
+  .l-footer--right {
+    padding-top: 32px;
+  }
+  .l-footer__contents {
+    text-align: center;
+  }
+  .l-footer__logo {
     font-size: 34px;
     margin-bottom: 3px;
     text-align: center;
   }
-}
-
-.l-footer .l-footer__copyright {
-  font-size: 12px;
-  padding-bottom: 50px;
-  text-align: center;
 }
 
 /*
