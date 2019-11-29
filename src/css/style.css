@@ -1659,8 +1659,9 @@ main {
 }
 
 .p-access--bgbox {
-  width: 80%;
-  padding-bottom: 750px;
+  width: 70%;
+  height: 550px;
+  margin-bottom: 206px;
   content: "";
   background-color: #3e3e3e;
 }
@@ -1691,7 +1692,7 @@ main {
 @media (min-width: 769px) {
   .p-access--container {
     position: absolute;
-    bottom: 100px;
+    top: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
