@@ -26,34 +26,38 @@
 
 
 	&--sns {
+		font-size: 36px;
+
 		margin-bottom: 30px;
+
+		opacity: .6;
 
 		@include sp {
 			display: flex;
-			justify-content: space-between;
+			justify-content: space-around;
 
-			padding: 0 60px;
+			margin: 0 auto;;
 		}
 
 		&__twitter {
-			font-size: 36px;
-
 			margin-right: 20px;
 			padding-bottom: 30px;
 
 			color: $gray;
 
 			@include sp {
-				float: left;
+				padding: 0;
 			}
 		}
 
 		&__facebook {
-			font-size: 36px;
-
 			padding-bottom: 30px;
 
 			color: $gray;
+
+			@include sp {
+				padding: 0;
+			}
 		}
 	}
 
@@ -89,9 +93,11 @@
 		margin-bottom: 14px;
 
 		@include sp {
-			font-size: 7vw;
+			font-size: 34px;
 
 			margin-bottom: 3px;
+
+			text-align: center;
 		}
 	}
 
@@ -99,6 +105,8 @@
 		font-size: 12px;
 
 		padding-bottom: 50px;
+
+		text-align: center;
 	}
 }
 /*
