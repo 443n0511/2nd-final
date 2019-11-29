@@ -12,21 +12,34 @@ const browserSync = require("browser-sync");
 gulp.task("browserSync", function() {
   browserSync({
     server: {
-      baseDir : 'dist/html', // 対象となるディレクトリ
-      index : 'index.html', // リロードするHTMLファイル
+      baseDir : 'dist', // 対象となるディレクトリ
+      index : 'html/index.html', // リロードするHTMLファイル
     }
   });
   // srcフォルダ以下のファイルを監視
-  gulp.watch("src/**", function() {
-    browserSync.reload(); // ファイルに変更があれば同期しているブラウザをリロード
+  gulp.watch("src/**", function(done) {
+    browserSync.reload();
+    done(); // ファイルに変更があれば同期しているブラウザをリロード
   });
 });
-/// htmlをdistにコピー ////////////////////////////////////////////
+/// ファイルをdistにコピー ////////////////////////////////////////////
 
 gulp.task('html', function () {
   return gulp.src("src/**/*.html")
     .pipe(gulp.dest('dist/'))
 })
+
+gulp.task('css', function () {
+  return gulp.src("src/**/*.css")
+    .pipe(gulp.dest('dist/'))
+})
+gulp.task('js', function () {
+  return gulp.src("src/**/*.js")
+    .pipe(gulp.dest('dist/'))
+})
+
+
+
 
 /// cssコンパイル ////////////////////////////////////////////
 gulp.task('sass', function() {
@@ -39,14 +52,17 @@ gulp.task('sass', function() {
 
 /// 監視フォルダ ////////////////////////////////////////////
 gulp.task('watch', function(){
-  gulp.watch('src/scss/**/**.scss', gulp.task('sass')); //sassが更新されたらgulp sassを実行
-
+  gulp.watch('src/scss/**/**.scss', gulp.task('sass'));
+  gulp.watch('src/**/*.html', gulp.task('html'));
+  gulp.watch('src/**/*.css', gulp.task('css'));
+  gulp.watch('src/**/*.js', gulp.task('js'));
+  
 });
 
 /// Gulpコマンドで動かすもの ////////////////////////////////////////////
 
 gulp.task('default', gulp.series(
-  gulp.parallel('watch', 'sass','html','browserSync')
+  gulp.parallel('watch', 'sass','html','css','js','browserSync')
 ));
 
 
