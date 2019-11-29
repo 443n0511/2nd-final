@@ -558,6 +558,12 @@ main {
   opacity: 1;
 }
 
+@media (max-width: 768px) {
+  .floating {
+    right: 8px;
+  }
+}
+
 /*
    _btn end
 */

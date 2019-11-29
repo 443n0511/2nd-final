@@ -12,7 +12,7 @@ const browserSync = require("browser-sync");
 gulp.task("browserSync", function() {
   browserSync({
     server: {
-      baseDir : 'dist', // 対象となるディレクトリ
+      baseDir : 'dist', // 対象となるディレクトリ（gulp.fileからみたルートで書く）
       index : 'html/index.html', // リロードするHTMLファイル
     }
   });
