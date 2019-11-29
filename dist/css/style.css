@@ -420,7 +420,7 @@ main {
 
 .p-about-button__anchor {
   line-height: 50px;
-  letter-spacing: .1em;
+  letter-spacing: .45px;
 }
 
 .p-news-button {
@@ -433,6 +433,7 @@ main {
 .p-news-button__anchor {
   line-height: 60px;
   width: 248px;
+  letter-spacing: 4px;
 }
 
 .p-news-button:link, .p-news-button:valid, .p-news-button:active {
@@ -450,6 +451,7 @@ main {
 .p-results-button__anchor {
   line-height: 64px;
   width: 248px;
+  letter-spacing: 4px;
 }
 
 .p-results-button:link, .p-results-button:valid, .p-results-button:active {
@@ -466,6 +468,7 @@ main {
 .p-access-button__anchor {
   line-height: 64px;
   width: 248px;
+  letter-spacing: 2px;
 }
 
 .p-access-button:link, .p-access-button:valid, .p-access-button:active {

@@ -122,7 +122,7 @@
 	&__anchor {
 		line-height: 50px;
 
-		letter-spacing: .1em;
+		letter-spacing: .45px;
 	}
 }
 
@@ -140,6 +140,8 @@
 		line-height: 60px;
 
 		width: 248px;
+
+		letter-spacing: 4px;
 	}
 	&:link, &:valid, &:active {
 		width: 248px;
@@ -158,6 +160,8 @@
 		line-height: 64px;
 
 		width: 248px;
+
+		letter-spacing: 4px;
 	}
 	&:link, &:valid, &:active {
 		height: 64px;
@@ -173,6 +177,8 @@
 		line-height: 64px;
 
 		width: 248px;
+
+		letter-spacing: 2px;
 	}
 	&:link, &:valid, &:active {
 		height: 64px;
