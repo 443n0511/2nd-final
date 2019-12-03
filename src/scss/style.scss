@@ -1,12 +1,12 @@
 @charset "utf-8";
 /* ==========================================================================
-   foundtion
+   foundation
 
    ========================================================================== */
 
-@import "foundtion/_mixin";
-@import "foundtion/_varlable";
-@import "foundtion/_base";
+@import "foundation/_mixin";
+@import "foundation/_varlable";
+@import "foundation/_base";
 
 /* ==========================================================================
       Layout
@@ -42,4 +42,4 @@
 /* ut ility
       ---------------------------------------------------------------- */
 @import "object/utility/spece";
-@import "foundtion/_vender";
+@import "foundation/_vender";
