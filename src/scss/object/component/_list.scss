@@ -41,15 +41,15 @@
 			content: "";
 			transform: rotate(45deg);
 
-			border-top: 3px solid $brack;
-			border-right: 3px solid $brack;
+			border-top: 3px solid $black;
+			border-right: 3px solid $black;
 		}
 		&__anchor {
 			text-decoration: none;
 
-			color: $brack;
+			color: $black;
 			&:link, &:valid, &:hover, &:active {
-				color: $brack;
+				color: $black;
 			}
 		}
 
@@ -79,7 +79,7 @@
 
 
 
-		&__lavel {
+		&__label {
 			font-size: 14px;
 			line-height: 28px;
 
@@ -137,7 +137,7 @@
 				padding-top: 10px;
 			}
 
-			&__lavel {
+			&__label {
 				font-size: 12px;
 				line-height: 25px;
 
@@ -200,7 +200,7 @@
 
 	cursor: pointer;
 
-	color: $brack;
+	color: $black;
 	&::before {
 		position: absolute;
 		top: 50%;

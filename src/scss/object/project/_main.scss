@@ -150,7 +150,7 @@
 
 	padding-bottom: 200px;
 
-	background-color: $brack;
+	background-color: $black;
 	&--wrap {
 		position: absolute;
 		top: 204px;
@@ -237,7 +237,7 @@
 
 	height: 100%;
 
-	background-color: $brack;
+	background-color: $black;
 }
 
 
@@ -350,7 +350,7 @@
 
 	text-align: left;
 
-	color: $brack;
+	color: $black;
 }
 
 @include  sp {
@@ -432,7 +432,7 @@
 
 	content: "";
 
-	background-color: $brack;
+	background-color: $black;
 }
 
 
@@ -452,7 +452,7 @@
 
 		content: "";
 
-		background-color: $brack;
+		background-color: $black;
 	}
 }
 
@@ -470,7 +470,7 @@
 
 @include sp {
 	.p-comments {
-		background-color: $brack;
+		background-color: $black;
 		&--inner {
 			position: relative;
 			top: -50px;
@@ -505,7 +505,7 @@
 	.p-comments--img-box {
 		margin-top: 280px;
 
-		background-color: $brack;
+		background-color: $black;
 	}
 
 	.p-comments--bgsbox {
@@ -564,7 +564,7 @@
 
 		content: "";
 
-		background-color: $brack;
+		background-color: $black;
 	}
 }
 
@@ -629,7 +629,7 @@
 
 		padding-bottom: 60px;
 
-		background-color: $brack;
+		background-color: $black;
 
 		&--bgbox {
 			display: none;
@@ -768,8 +768,8 @@
 			content: "";
 			transform: rotate(45deg);
 
-			border-right: 3px solid $brack;
-			border-bottom: 3px solid $brack;
+			border-right: 3px solid $black;
+			border-bottom: 3px solid $black;
 		}
 	}
 
@@ -795,7 +795,7 @@
 		padding: 0 12px;
 
 		border: none;
-		border-bottom: 1px solid $brack;
+		border-bottom: 1px solid $black;
 	}
 
 	&__radio {

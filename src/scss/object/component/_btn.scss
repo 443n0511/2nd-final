@@ -1,6 +1,8 @@
 /*
    _btn
 */
+
+
 .c-button {
 	cursor: pointer;
 	transition: 1s;
@@ -28,24 +30,7 @@
 		        border-radius: 10px;
 		background-color: darken($orange,20%);
 	}
-
-
-
-
-
-	&:disabled {
-		background-color: darken($gray,20%);
-	}
-
 	&:link, &:valid, &:active {
-		width: 100%;
-		height: 100%;
-
-		color: $white;
-	}
-	&__anchor {
-		width: 100%;
-
 		color: $white;
 	}
 }
@@ -53,12 +38,12 @@
 
 
 .c-button--white {
-	color: $brack;
-	border: 1px solid $brack;
+	color: $black;
+	border: 1px solid $black;
 	background: $white;
 
 	&:hover {
-		background-color: $brack;
+		background-color: $black;
 	}
 
 
@@ -68,24 +53,24 @@
 	&__anchor {
 		letter-spacing: 5px;
 
-		color: $brack;
+		color: $black;
 
 		&:link, &:visited {
-			color: $brack;
+			color: $black;
 		}
 		&:hover {
 			color: $white;
 		}
 		&:active {
-			color: $brack;
+			color: $black;
 		}
 	}
 }
 
-.c-button--brack {
+.c-button--black {
 	color: $white;
 	border: 1px solid $white;
-	background: $brack;
+	background: $black;
 
 	&:hover {
 		background-color: $white;
@@ -104,7 +89,7 @@
 			color: $white;
 		}
 		&:hover {
-			color: $brack;
+			color: $black;
 		}
 		&:active {
 			color: $white;
@@ -122,7 +107,15 @@
 	&__anchor {
 		line-height: 50px;
 
+		width: 100%;
+
 		letter-spacing: .45px;
+
+		color: $white;
+	}
+	&:link, &:valid, &:active {
+		width: 100%;
+		height: 100%;
 	}
 }
 

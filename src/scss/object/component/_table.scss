@@ -27,7 +27,7 @@
 
 	letter-spacing: 1px;
 
-	border: 1px solid $brack;
+	border: 1px solid $black;
 
 	@extend %table;
 
@@ -39,7 +39,7 @@
 		vertical-align: center;
 
 		color: #fff;
-		background: $brack;
+		background: $black;
 
 		@extend %table;
 	}
@@ -54,7 +54,7 @@
 		text-align: left;
 		vertical-align: center;
 
-		color: $brack;
+		color: $black;
 		background-color: $white;
 
 		@extend %table;

@@ -1,5 +1,62 @@
 
 .c-contact--form {
+	button {
+		font-weight: bold;
+		font-style: 18px !important;
+
+		display: block;
+
+		cursor: pointer;
+		transition: 1s;
+		text-align: center;
+		text-decoration: none;
+
+		border: none;
+	}
+
+	&__button {
+		line-height: 50px;
+
+		width: 174px;
+		height: 50px;
+
+		letter-spacing: .45px;
+
+		color: $white;
+
+		@include sp {
+			width: 121px;
+		}
+		&:link, &:valid, &:active {
+			width: 174px;
+			height: 50px;
+
+			@include sp {
+				width: 121px;
+			}
+		}
+	}
+	&__button-disable {
+		cursor: not-allowed;
+
+		-webkit-border-radius: 10px;
+		   -moz-border-radius: 10px;
+		        border-radius: 10px;
+		background: darken($gray,30%);
+
+		&:hover {
+			background-color: darken($gray,30%);
+		}
+		&:link, &:valid, &:active {
+			color: $white;
+		}
+	}
+
+
+
+
+
+
 	input, textarea {
 		font-family: inherit;
 		font-size: inherit;
@@ -83,7 +140,7 @@
 					content: "";
 					transform: translateY(-50%);
 
-					border: 1px solid $brack;
+					border: 1px solid $black;
 					border-radius: 50%;
 					background: $white;
 				}
@@ -104,7 +161,7 @@
 				&:focus, &:checked {
 					border: 1px solid $white;
 					outline: none;
-					background: $brack;
+					background: $black;
 					box-shadow: none;
 				}
 			}
@@ -164,7 +221,7 @@
 					content: "";
 					transform: translateY(-50%);
 
-					border: 1px solid $brack;
+					border: 1px solid $black;
 					border-radius: 2px;
 					background: #fff;
 				}
@@ -218,7 +275,7 @@
 		cursor: pointer;
 		cursor: pointer;
 
-		border: 1px solid $brack;
+		border: 1px solid $black;
 		border-radius: 0;
 		background-image: none;
 
@@ -234,7 +291,7 @@
 		}
 
 		&:focus {
-			border: 1px solid $brack;
+			border: 1px solid $black;
 			outline: none;
 			box-shadow: none;
 		}

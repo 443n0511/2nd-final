@@ -26,7 +26,6 @@
 	display: none;
 }
 
-
 .l-header--nav-list {
 	display: flex;
 	flex-direction: row;
@@ -54,7 +53,7 @@
 
 		text-decoration: none;
 
-		color: $brack;
+		color: $black;
 		&::after {
 			position: absolute;
 			bottom: 10px;
@@ -68,7 +67,7 @@
 			transform: scale(0, 1);
 			transform-origin: center top;
 
-			background: $brack;
+			background: $black;
 		}
 
 		&:hover::after {
@@ -78,15 +77,23 @@
 }
 
 
-
-
-
-
-
 .nav-item-border {
-	border-bottom: 2px solid $brack;
-}
+	&::after {
+		position: absolute;
+		bottom: 10px;
+		left: 0;
 
+		width: 100%;
+		height: 1px;
+
+		content: "";
+
+		background: $black;
+	}
+	&:hover::after {
+		transform: scale(1, 1);
+	}
+}
 
 
 @include  sp {
@@ -143,7 +150,6 @@
 		}
 	}
 }
-
 /*
 　_header end
 */
