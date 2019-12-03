@@ -99,6 +99,9 @@ $('.floating').click(function () {
   return false;
 });
 
+
+
+
 $(function() {
 
   //チェックボックス操作時
